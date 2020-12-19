@@ -1,0 +1,63 @@
+body {
+  padding: 20px;
+  text-align: center;
+}
+
+#gridContainer {
+  padding-bottom: 10px;
+}
+
+table {
+  border-spacing: 0;
+  margin: 0 auto;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  padding: 0.55em;
+  border-radius: 5px;
+  color: #222;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+.inputfile + label * {
+  pointer-events: none;
+}
+
+td {
+  border: 1px solid #000;
+  width: 20px;
+  height: 20px;
+}
+
+span {
+  color: #222;
+}
+
+#start,
+#clear,
+#random,
+#nextGen,
+#export {
+  padding: 0.75em;
+  border-radius: 5px;
+  border: none;
+  background-color: #ccc;
+}
+
+td.dead {
+  background-color: transparent;
+}
+
+td.live {
+  background-color: #cc4774;
+}
